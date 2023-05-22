@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Forms</title>
+</head>
+<body>
+    
+<div class="container">
+    <h1>Ficha de inscrição </h1> <br><br>
+    
+    <div class="container2">    
+    <div class="formulario">
+        <div class="details-wrapper">
+        <details name="inscrição1">    
+            <summary>Inscrição etec</summary>
+           <div class="parte1">
+            <form method="get">
+                <div class="input-box">
+                <!*nome do aluno*!>            
+                        <label for="alunoname">Nome do aluno</label>  <br>
+                        <input type="text" id="alunoname" placeholder="Nome completo" required>  <br>
+                
+                <!Sexo value= homem ou mulher>
+                        <label for="sexo">Sexo do aluno</label> <br>               
+                        <input type="radio" name="sexo"   id="sexo" value="Homem">
+                        <label for="sexo">Masculino</label>                    
+                        <input type="radio" name="sexo" id="sexo" value="Mulher">
+                        <label for="sexo">Feminino</label><br>
+                                                
+                <!Idade da pra mudar pra type date pra selecionar o dia,mes e ano!>
+                        <label for="age">Idade do aluno</label>  <br>
+                        <input type="number" min="1" id="age" placeholder="Idade" required>  <br>
+            
+                <!gmail!>
+                        <label for="gmail">Email</label><br>
+                        <input type="email" id="gmail" placeholder="Digite o E-mail do responsavel" required>   <br>
+                        
+                <! TIPO SANGUINEO botar vallue= tipo do sangue!>
+
+                    <label for="sangue">Tipo sanguineo</label><br>
+                        <input type="radio" id="sangueA" name="tiposangue">
+                        <label for="sangueA">Tipo A</label><br>
+                        <input type="radio" id="sangueA-" name="tiposangue">
+                        <label for="sangueA-">Tipo A-</label><br>
+
+                        <input type="radio" id="sangueB" name="tiposangue">
+                        <label for="sangueB">Tipo B</label><br>
+                        <input type="radio" id="sangueB-" name="tiposangue">
+                        <label for="sangueB-">Tipo B-</label><br>
+
+                        <input type="radio" id="sangueAB"name="tiposangue">
+                        <label for="sangueAB">Tipo AB</label><br>
+                        <input type="radio" id="sangueAB-"name="tiposangue">
+                        <label for="sangueAB-">Tipo AB-</label><br>
+
+                        <input type="radio" id="sagueO"name="tiposangue">
+                        <label for="sangueO">Tipo O</label><br>
+                        <input type="radio" id="sagueO-"name="tiposangue">
+                        <label for="sangueO-">Tipo O-</label><br>
+
+                    <!endereço !>
+                        <label for="adress">Endereço</label><br>
+                        <input type="text"id="adress" placeholder="Digite seu endereço" required><br>
+                    
+                    <! Telefone!>
+                    <label for="Telefone">Telefone do responsavel</label><br>
+                    <input type="tel" id="Telefone" placeholder="(xx) xxxx-xxxx" required><br>
+                    
+                    <label for="curso">Cursos etec</label><br>
+                    <input type="radio" id="adm" name="adm" value="adm">
+                    <label for="adm">Administração</label><br>
+                    <input type="radio" id="Contabilidade" name="Contabilidade" value="contabilidade">
+                    <label for="Contabilidade">Contabilidade</label><br>
+
+                    <input type="radio" id="ads" name="ads" value="ads">
+                    <label for="ads">analise e desenvolvimento de sistemas</label><br>
+                    <input type="radio" id="elet" name="elet" value="Eletromecânica">
+                    <label for="elet">Eletromecânica</label><br>
+                
+                
+                </div>        
+                    <! foto do aluno!>
+                     <label for="fototeta">Foto do aluno</label> <br>
+                     <input type="file" id="fototeta" placeholder="Foto do aluno" required> <br> 
+                     
+                    <br> <button type="submit">Enviar</button>
+                    </div>
+                   </div> 
+                    
+             </form>    
+
+        </details>  
+        <div class="pai1">
+            <div class="details-wrapper">
+            <details name="inscrição2">    
+                <summary>Informações pessoais do responsavel</summary>
+               <div class="parte1">
+                <form class="pai1" method="get">
+                        <div class="input-box">
+                            <!--*nome do responsavel*  -->       
+                                    <label for="responsavelname">Nome do responsavel</label>  <br>
+                                    <input name="responsavelname1" type="text" id="responsavelname" placeholder="Nome completo" required>  <br>
+                            
+                            <!--Sexo value= homem ou mulher>-->
+                                    <label for="sexo2">Sexo do responsavel</label> <br>               
+                                    <input type="radio" name="sexo2"   id="sexo2" value="Homem">
+                                    <label for="sexo2">Masculino</label>                    
+                                    <input type="radio" name="sexo2" id="sexo2" value="Mulher">
+                                    <label for="sexo2">Feminino</label><br>
+                        
+                            <!--data de nascimento-->  
+                                    <label for="nascimentopai1">data de nascimento</label><br>
+                                    <input name="nascimentopai1" type="date" id="nascimentopai1"><br>
+                            
+                            <!--gmail -->
+                                    <label for="gmail">Email</label><br>
+                                    <input name="emailpai1" type="email" id="gmail" placeholder="Digite o E-mail do responsavel" required>   <br>
+                                    
+                            <!--endereço-->
+                                    <label for="adress">Endereço</label><br>
+                                    <input name="endereçopai1" type="text"id="adress" placeholder="Digite seu endereço" required><br>
+                                
+                            <!---Telefone!-->
+                                <label for="Telefone">Telefone do responsavel</label><br>
+                                <input name="telefonepai1" type="tel" id="Telefone" placeholder="(xx) xxxx-xxxx" required><br>
+                                
+                            <!--outra opção de contato-->
+                                <label for="contato2">Outra forma de contato</label><br>
+                                <input name="contatopai1" type="text" id="contato2" placeholder="telefone fixo" required><br>
+                            <!--Rg--> 
+                                <label for="rg1">Rg</label><br>
+                                <input name="rgpai1" type="text" id="rg1" placeholder="xxxxxxxx-x" minlength="9" maxlength="9" required pattern="[0-9]+$"><br>
+    
+                        </div>  
+                                <button type="submit">Enviar</button>
+                        
+                    </div>
+                </div>
+                </form>    
+                               
+            </details>  
+        </div>
+                               
+            </details>  
+           <details>
+            <summary>Informações pessoais </summary>
+            <div class="details-wrapper">
+            <div class="pessoal1">
+             <form class="pessoal" method="get">
+                     <div class="input-box">
+                         <!--*nome *  -->       
+                                 <label for="name">Nome</label>  <br>
+                                 <input name="name1" type="text" id="name" placeholder="Nome completo" required>  <br>
+                         
+                         <!--Sexo value= homem ou mulher>-->
+                                 <label for="sexo4">Sexo</label> <br>               
+                                 <input type="radio" name="sexo4"   id="sexo4" value="Homem">
+                                 <label for="sexo4">Masculino</label>                    
+                                 <input type="radio" name="sexo4" id="sexo4" value="Mulher">
+                                 <label for="sexo4">Feminino</label><br>
+                     
+                         <!--data de nascimento-->  
+                                 <label for="bornin">data de nascimento</label><br>
+                                 <input name="bornin" type="date" id="bornin"><br>
+                         
+                         <!--gmail -->
+                                 <label for="outlock">Email</label><br>
+                                 <input name="outlock" type="email" id="outlock" placeholder="Digite o E-mail do responsavel" required>   <br>
+                                 
+                         <!--endereço-->
+                                 <label for="adress3">Endereço</label><br>
+                                 <input name="adress3" type="text"id="adress3" placeholder="Digite seu endereço" required><br>
+                             
+                         <!---Telefone!-->
+                             <label for="numbertel">numero do telefone</label><br>
+                             <input name="numbertel" type="tel" id="numbertel" placeholder="(xx) xxxx-xxxx" required><br>
+                             
+                         <!--outra opção de contato-->
+                             <label for="contat">Outra forma de contato</label><br>
+                             <input name="contat" type="text" id="contat" placeholder="telefone fixo" required><br>
+                         <!--Rg--> 
+                             <label for="rg5">Rg</label><br>
+                             <input name="rg5" type="text" id="rg5" placeholder="xxxxxxxx-x" minlength="9" maxlength="9" required pattern="[0-9]+$"><br>
+                        
+                        <!--cpf-->
+                        <label for="cpf">cpf</label><br>
+                        <input name="cpf" type="text" id="cpf" placeholder="xxxxxxxxxxx" minlength="9" maxlength="9" required pattern="[0-9]+$"><br>
+
+                             <button type="submit">Enviar</button>
+                     </div>  
+                            
+                     
+                 </div>
+                </details>
+                </div>
+            </div>
+</div> 
+</div>
+</div>   
+
+</body>
+</html>
+
+
